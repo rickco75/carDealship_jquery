@@ -1,0 +1,243 @@
+/*define variable for Theme styles */
+@primary-color:#E70909;
+@accent-color:#422C2C;
+@forground-color:#F8F3F3;
+@background-color:#CBC6C6;
+@text-shadow-color:white;
+@font-family: sans-serif;
+/*end of variable declaration */
+
+/*LESS Variables for fonts  */
+@font-base-size:14px;
+
+.text-shadow(@color:@text-shadow-color)
+{
+ text-shadow: 3px 3px 3px @color;
+}
+.gradient(@startColor:#CE2222, @endColor:#C71A1A)
+{
+  background: -webkit-linear-gradient(left, @startColor, @endColor); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, @startColor, @endColor); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, @startColor, @endColor); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, @startColor, @endColor);
+}
+/* Example of using mixin in less file */
+
+.textShadow{
+  .text-shadow(@text-shadow-color);
+}
+
+#headername {
+    font-size: @font-base-size * 2.57;
+    font-family: @font-family;
+    font-style: italic;
+    .text-shadow(@text-shadow-color);
+    /*text-align: left;
+
+    color: @primary-color;
+    padding: 15px;
+    padding-left: 20px;
+    margin: 4px 0px;
+    font-weight: bold;
+    width: 90%;
+    position: fixed;
+    top: 0;
+    bottom: auto;*/
+}
+
+.centerText{
+  text-align: center;
+}
+/* AUTO SCALE IMAGE SIZES */
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+
+.welcome{
+  font-family: sans-serif;
+  font-weight: bold;
+  color:rgb(66, 26, 40);
+  font-size:larger;
+}
+  .backgroundgradient {
+    .gradient();
+    }
+
+  .rounded-corners(@size: 18px)
+  {
+     border-radius:@size;
+    -moz-border-radius: @size;
+    -webkit-border-radius: @size;
+    -o-border-radius: @size;
+  }
+
+/*h1 {
+   font-size: @font-base-size + 8;
+   border: red 4px solid;
+   background-color: @background-color;
+   background-color: white;
+   text-align: left;
+   padding:5px;
+   .rounded-corners();
+}*/
+
+header, section, footer, aside, nav, main, article, figure {
+    display: block;
+}
+
+body{
+  background-color:rgb(255, 255, 250);
+  font-family:sans-serif;
+}
+
+footer {
+  text-align: center;
+  font-weight: bold;
+  background-color:rgb(203, 203, 203);
+}
+
+.twocol {
+    column-count: 2;
+    height: 100%;
+    width: 90%;
+    font-weight: bold;
+    color:rgb(24, 19, 45);
+}
+
+.headerlogoLink{
+  text-decoration: none;
+}
+.Highlight{
+  background-color:rgba(113, 114, 126, 0.53);
+}
+
+/*.navbar .nav > li.dropdown.open.active > a:hover,
+.navbar .nav > li.dropdown.open > a
+{
+   color: #fff;
+   background-color: #b91773;
+   border-color: #fff;
+}*/
+
+.mobileDropdownText{
+  color:red;
+}
+.logoImage {
+    position: relative;
+    max-height:50px;
+    max-width:50px;
+    margin-right: 5px;
+    // max-width: 6%;
+    // height: auto;
+    // width: auto\9; /* ie8 */
+}
+
+.footer {
+   position:absolute;
+   bottom:0;
+   padding-top:20px;
+   width:100%;
+   height:100px;   /* Height of the footer */
+   background-color: darkgrey;
+   font-weight: bold;
+   text-align: center;
+}
+
+fieldset {
+    border: 0;
+    font-family: fantasy;
+    font-size: 18px;
+}
+
+label {
+    border: 0;
+    font-family: fantasy;
+    font-size: 18px;
+}
+
+.formClass{
+  background-color:lightgrey;
+  border-radius: 2em;
+  width: 80%;
+  padding:20px;
+  margin:20px;
+}
+.searchBox{
+   /*font-size:14px;*/
+   float: right;
+ }
+ .search{
+   position: absolute;
+   right: 6px;
+   margin-right: 10px;
+ }
+
+a.noDecoration{
+  text-decoration: none;
+  cursor:default;
+}
+.robotTable{
+  text-align: center;
+  width:80%;
+}
+
+/*.noListStyle {
+  list-style: none;
+}*/
+
+ul {
+  list-style: none;
+}
+/*nav {
+    height: 55px;
+    width: 100%;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    padding-left: 5px;
+    padding-top:5px;
+    text-shadow: 1px 1px 1px #5f2c17;
+    .rounded-corners();
+}
+nav ul {
+    list-style: none;
+    padding: 5px;
+}
+nav ul li {
+    display: block;
+}
+nav ul li > a {
+    text-decoration:none;
+}
+nav ul li > a:hover {
+    text-decoration:underline;
+}
+
+.navbar-background {
+    background-color: #E70909;
+    padding-bottom: 5px;
+    padding-top:0px;
+
+}*/
+/*@media screen and (min-width: 480px) {
+    body {
+        background-color: lightgreen;
+    }
+}*/
+.navlink {
+    height: 35px;
+    margin-right: 10px;
+    font-size: 17px;
+    float: left;
+    padding-left:5px;
+    padding-right:5px;
+    padding-top: 12px;
+    color: white;
+    text-decoration: none;
+}
+.navlink.active {
+    color: red;
+    background-color:lightgrey;
+}
+/* Navigation bar styles end */

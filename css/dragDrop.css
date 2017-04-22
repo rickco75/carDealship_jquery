@@ -1,0 +1,41 @@
+/* make draggable areas self-contained elements */
+
+ #source-container, #target-container {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+}
+    p {
+       display: block;
+       -webkit-margin-before: 1em;
+       -webkit-margin-after: 1em;
+       -webkit-margin-start: 0px;
+       -webkit-margin-end: 0px;
+    }
+
+    [data-role="drag-drop-container"] {
+    float:left;
+    width:100px;
+    height:100px;
+    margin:10px;
+    padding:10px;
+    border:3px solid #ddd;
+    border-radius:4px;
+    }
+
+    [draggable="true"] {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    }
+
+    .drag {
+    opacity:0.25;
+    }
+
+    .over {
+        background-color:#ffc;
+    }

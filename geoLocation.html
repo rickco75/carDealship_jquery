@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Geolocation</title>
+    <script type="text/javascript" src="bower_components\jquery\dist\jquery.min.js"></script>  <!-- jquery -->    
+    <script type="text/javascript" src="scripts\geoLocation.js"></script>
+  </head>
+  <body>
+      <div id="container">
+          <h1>Show Position</h1>
+          <section>
+              <input type="button" id="getLocationButton" value="Get Location" />
+              <a href="" id="mapLink" target="_blank">View Map</a>
+
+              <label for="lat">Latitude:</label>
+              <input type="text" id="lat" name="lat" />
+
+              <label for="long">Longitude:</label>
+              <input type="text" id="long" name="long" />
+
+              <label for="alt">Altitude</label>
+              <input type="text" id="alt" name="alt" />
+
+              <label for="acc">Accuracy</label>
+              <input type="text" id="acc" name="acc" />
+
+              <label for="altAcc">Altitude Accuracy</label>
+              <input type="text" id="altAcc" name="altAcc" />
+
+              <label for="heading">Heading</label>
+              <input type="text" id="heading" name="heading" />
+
+              <label for="speed">Speed</label>
+              <input type="text" id="speed" name="speed" />
+
+              <label for="timestamp">Timestamp</label>
+              <input type="text" id="timestamp" name="timestamp" />
+
+              <ul id="log"></ul>
+          </section>
+      </div>
+</html>

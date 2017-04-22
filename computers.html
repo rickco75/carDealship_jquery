@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Mr Robot!</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">                    <!-- BOOTSTRAP 3 MOBILE FIRST DIRECTIVE  -->
+  <!-- STYLE -->
+  <link rel="stylesheet" href="bootstrap\dist\css\bootstrap.min.css">                     <!-- Bootstrap Main Style -->
+  <link rel="stylesheet" href="bootstrap\dist\css\bootstrap-theme.min.css">               <!-- Bootstrap Theme Style -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css" />  <!-- Awesome Fonts -->
+  <link rel="stylesheet/less" href="css/styles.less" type="text/css" />                   <!-- Custom Style Sheet -->
+  <!-- SCRIPT -->
+  <script type="text/javascript" src="/scripts/less.js"></script>                         <!-- less JS -->
+  <script type="text/javascript" src="bower_components\jquery\dist\jquery.min.js"></script>  <!-- jquery -->
+  <script type="text/javascript" src="bootstrap\dist\js\bootstrap.min.js"></script>       <!-- Bootstrap JS -->
+  <script type="text/javascript" src="scripts\script.js"></script>
+  <style media="screen">
+  /* make draggable areas self-contained elements */
+[draggable="true"]
+-moz-user-select: none;
+-webkit-user-select: none;
+
+/* support for Safari */
+-khtml-user-select: none;
+-khtml-user-drag:element;
+
+/* supports older version of webkit I9 */
+-webkit-user-drag:element;
+}
+  </style>
+</head>
+  <body class="container">
+    <section class="content">
+      <nav class="navbar navbar-default navbar-background">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button"
+                    class="navbar-toggle collapsed"
+                    data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="" href="index.html">
+              <img class="logoImage" src="images/logo.jpg" />
+            </a>
+          </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li>
+                <a href="index.html">
+                  Home
+                 <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li>
+                <a href="robots.html">Robots</a>
+              </li>
+              <li class="active">
+                <a href="computers.html">Hardware</a>
+              </li>
+              <li>
+                <a href="contact.html">Contact</a>
+              </li>
+              <li>
+                <a href="About.html">About</a>
+              </li>
+            </ul>
+            <form class="navbar-form navbar-left">
+              <div class="form-group">
+                <input type="text" class="form-control"  placeholder="Search our store">
+              </div>
+              <!-- <button type="submit" class="btn btn-default">Submit</button> -->
+            </form>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+      <!-- <header>
+        <div>
+            <a class="headerlogoLink" href="index.html">
+                <img class="logoImage" id="logoImage" src="images/logo.jpg" />
+            </a>
+            <span id="headername">Mr. Robot</span>
+            <span class="searchBox">
+              <input type="search" class="searchbox" placeholder="Search our store" />
+            </span>
+        </div>
+
+        <nav class="navbar-background">
+              <ul>
+                <li><a class="navlink" href="index.html">Home</a></li>
+                <li><a class="navlink" href="robots.html">Robots</a></li>
+                <li><a class="navlink active" href="computers.html">Hardware</a></li>
+                <li><a class="navlink" href="contact.html">Contact</a></li>
+                <li><a class="navlink" href="about.html">About</a></li>
+              </ul>
+          </nav>
+      </header> -->
+
+      <form onSubmit="return false;" id="computerForm">
+        <fieldset>
+          <legend>Select a CPU</legend>
+          <p><label for="i3"><input type="radio" name="CPU" id="i3" value="i3">Intel i3</label></p>
+          <p><label for="i4"><input type="radio" name="CPU" id="i4" value="i4"></label>Intel i4</p>
+          <p><label for="i7"><input type="radio" name="CPU" id="i7" value="i7"></label>Intel i7</p>
+        </fieldset>
+    <fieldset>
+      <legend>Select Ram</legend>
+      <p><label for="8"><input type="radio" name="ram" value="8 Gigs" id="8">8gig</label></p>
+      <p><label for="16"><input type="radio" name="ram" value="16 Gigs" id="16">16gig</label></p>
+    </fieldset>
+      <fieldset>
+        <legend>Accessories</legend>
+        <p><label for="vrh"><input type="checkbox" name="Accessories" value="Virtual Reality Helmet" id="vrh">Virtual Reality Helmet</label></p>
+        <p><label for="3ds"><input type="checkbox" name="Accessories" value="3D Screen" id="3ds">3D Screen</label></p>
+        <p><label for="ss"><input type="checkbox" name="Accessories" value="Stereo Speakers" id="ss">Stereo Speakers</label></p>
+      </fieldset>
+    <p>
+      <button id="save">Submit</button>
+    </p>
+  </form>
+  <footer class="textShadow">
+    <p>Our address is: 1011 Crater Ave, Moon City: THE MOON<br>
+    All site contents is copyright <a class="mainlink" href="http://www.mrrobot.com">Mr Robot!</a><br>
+    This page was generated on <time>09:25:04.123</time>.
+    </p>
+  </footer>
+</section>
+  </body>
+</html>
